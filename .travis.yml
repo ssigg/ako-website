@@ -9,7 +9,7 @@ install: go get -v github.com/spf13/hugo
 
 script:
 - cd src
-- hugo
+- hugo --theme=blank
 
 env:
   global:
