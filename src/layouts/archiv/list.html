@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>AKO - {{ .Title }}</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="three columns">
+                {{ partial "menu.html" . }}
+            </div>
+            {{ range $index, $element := .Data.Pages }}
+            <div class="row{{ if gt $index 0}}{{end}}">
+                <div class="six columns{{ if gt $index 0}} offset-by-three{{end}}">
+                    {{ $element.Render "summary"}}
+                </div>
+                <div class="three columns">
+                    {{ $element.Render "flyer"}}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </body>
+</html>

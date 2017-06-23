@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>AKO - {{ .Title }}</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="three columns">
+                    {{ partial "menu.html" . }}
+                </div>
+                <div class="eight columns">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

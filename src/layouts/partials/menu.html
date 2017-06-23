@@ -1,0 +1,7 @@
+<ul class="menu">
+    <li><a href="/"{{ if eq .URL "/" }} class="selected"{{ end }}>Aktuell</a></li>
+    <li><a href="/archiv/"{{ if eq .URL "/archiv/" }} class="selected"{{ end }}>Archiv</a></li>
+    <li><a href="/orchester/"{{ if eq .URL "/orchester/" }} class="selected"{{ end }}>Orchester</a></li>
+    <li><a href="/dirigent/"{{ if eq .URL "/dirigent/" }} class="selected"{{ end }}>Dirigent</a></li>
+    <li><a href="/vorstand/"{{ if eq .URL "/vorstand/" }} class="selected"{{ end }}>Vorstand</a></li>
+</ul>
