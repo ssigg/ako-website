@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ssigg/ako-netlify # Path to your Github repository
+  repo: ssigg/ako-website # Path to your Github repository
   branch: master # Branch to update
 publish_mode: editorial_workflow
 media_folder: "static/content"
