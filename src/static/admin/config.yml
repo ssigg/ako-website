@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ssigg/ako-website # Path to your Github repository
   branch: master # Branch to update 
-media_folder: "static/content"
+media_folder: "src/static/content"
 collections:
 - name: "index" # Used in routes, e.g. /admin/collections/blog
   label: "Start" # Used in the UI
