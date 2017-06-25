@@ -5,8 +5,8 @@
             <div class="three columns">
                 {{ partial "menu.html" . }}
             </div>
-            {{ range $index, $element := .Data.Pages }}
-            <div class="row{{ if gt $index 0}}{{end}}">
+            {{ range $index, $element := sort .Data.Pages "Weight" "desc" }}
+            <div class="row">
                 <div class="six columns{{ if gt $index 0}} offset-by-three{{end}}">
                     {{ $element.Render "summary"}}
                 </div>

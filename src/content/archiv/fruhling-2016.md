@@ -1,6 +1,6 @@
 ---
 title: Frühling 2016
-date: 04/12/2016 7:30 PM
+weight: 201604
 flyer: /uploaded/fr-2016.jpg
 ---
 **Dvořák**: Cellokonzert h-moll op. 104  

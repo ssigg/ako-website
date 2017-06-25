@@ -1,6 +1,6 @@
 ---
 title: Frühling 2017
-date: 2017-06-25T17:48:02.427Z
+weight: 201705
 flyer: /uploaded/fr-2017.jpg
 ---
 

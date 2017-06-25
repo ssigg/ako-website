@@ -1,6 +1,6 @@
 ---
 title: Herbst 2016
-date: 2016-10-11T17:30:15.000Z
+weight: 201610
 flyer: /uploaded/he-2016.jpg
 ---
 
