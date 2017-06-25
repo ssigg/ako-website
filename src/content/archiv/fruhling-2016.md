@@ -8,3 +8,4 @@ flyer: /uploaded/fr-2016.jpg
 **Leitung**: Matthias Kuhn  
 **Solistin**: Chiara Enderle
 
+
