@@ -7,3 +7,4 @@ flyer: /uploaded/fr-2016.jpg
 **Schumann**: Sinfonie Nr. 2 C-Dur op. 61  
 **Leitung**: Matthias Kuhn  
 **Solistin**: Chiara Enderle
+
