@@ -1,6 +1,6 @@
 ---
 title: Aktuell
-flyer: static/content/fr-2017.jpg
+flyer: /uploaded/fr-2017.jpg
 ---
 
 **Frühling 2017**
