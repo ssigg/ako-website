@@ -3,8 +3,7 @@ title: Aktuell
 flyer: /uploaded/fr-2017.jpg
 ---
 
-**Frühling 2017**
-
-# Gemeinschaftsprojekt mit dem Akademischen Chor Zürich
-Hermann Suter: Le Laudi  
-Leitung: Anna Jelmorini
+Herrmann Suter:
+# Le Laudi
+mit dem Akademischen Chor Zürich  
+**Leitung**: Anna Jelmorini

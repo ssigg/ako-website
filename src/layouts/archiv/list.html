@@ -1,13 +1,17 @@
+<!doctype html>
 <html>
     {{ partial "head.html" (dict "title" "Archiv") }}
     <body>
         <div class="container">
-            <div class="three columns">
-                {{ partial "menu.html" . }}
-            </div>
+            {{ partial "header.html" }}
             {{ range $index, $element := sort .Data.Pages "Weight" "desc" }}
-            <div class="row">
-                <div class="six columns{{ if gt $index 0}} offset-by-three{{end}}">
+            <div class="row content">
+                {{ if eq $index 0 }}
+                <div class="three columns">
+                    {{ partial "menu.html" . }}
+                </div>
+                {{ end }}
+                <div class="six columns{{ if gt $index 0 }} offset-by-three{{end}}">
                     {{ $element.Render "summary"}}
                 </div>
                 <div class="three columns">
@@ -15,6 +19,7 @@
                 </div>
             </div>
             {{ end }}
+            {{ partial "footer.html" }}
         </div>
     </body>
 </html>
