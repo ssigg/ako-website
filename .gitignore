@@ -1,3 +1,4 @@
 .DS_Store
 src/public
 node_modules
+src/static/resized-images

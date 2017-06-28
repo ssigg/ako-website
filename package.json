@@ -1,0 +1,23 @@
+{
+  "name": "ticketbox-client",
+  "description": "Ticket reservation system",
+  "version": "1.0.0",
+  "homepage": "http://ssigg.github.io/ticketbox-client",
+  "repository": "https://github.com/ssigg/ako-website",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-image-resize": "^0.12.0",
+    "gulp-rename": "^1.2.2",
+    "http-server": "^0.6.1",
+    "hugo-cli": "^0.4.2",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm run build",
+    "build": "cd src && hugo && gulp",
+    "start": "cd src/public && http-server -a localhost -p 8000"
+  }
+}
