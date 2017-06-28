@@ -21,4 +21,4 @@ env:
 
 after_success:
   - export SSHPASS=$DEPLOY_PASS
-  - sshpass -e scp -r -P $DEPLOY_PORT -o stricthostkeychecking=no public/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
+  - sshpass -e scp -r -P $DEPLOY_PORT -o stricthostkeychecking=no src/public/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
