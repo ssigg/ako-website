@@ -17,7 +17,7 @@
   },
   "scripts": {
     "prestart": "npm run build",
-    "build": "cd src && hugo && gulp",
+    "build": "gulp && cd src && hugo",
     "start": "cd src/public && http-server -a localhost -p 8000"
   }
 }
