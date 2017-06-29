@@ -1,12 +1,15 @@
 var gulp = require('gulp');
 var clean = require('gulp-clean');
 var imageResize = require('gulp-image-resize');
-var rename = require('gulp-rename');
 
 var paths = {
   sources: './src/static/uploaded/*.{jpg,png}',
-  destination: './src/static/resized-images'
-}
+  destinations: {
+    mobile: './src/static/resized-images/mobile',
+    desktop3: './src/static/resized-images/desktop-three-columns',
+    desktop8: './src/static/resized-images/desktop-eight-columns'
+  }
+};
 
 gulp.task('clean', function() {
   return gulp.src(paths.destination + '/*')
@@ -21,8 +24,7 @@ gulp.task('mobile', [ 'clean' ], function () {
       upscale: false,
       interlace: true
     }))
-    .pipe(rename(function (path) { path.basename += '-mobile'; }))
-    .pipe(gulp.dest(paths.destination));;
+    .pipe(gulp.dest(paths.destinations.mobile));
 });
 
 gulp.task('desktop-eight-columns', [ 'mobile' ], function () {
@@ -33,8 +35,7 @@ gulp.task('desktop-eight-columns', [ 'mobile' ], function () {
       upscale: false,
       interlace: true
     }))
-    .pipe(rename(function (path) { path.basename += '-desktop-eight-columns'; }))
-    .pipe(gulp.dest(paths.destination));
+    .pipe(gulp.dest(paths.destinations.desktop8));
 });
 
 gulp.task('desktop-three-columns', [ 'desktop-eight-columns' ], function () {
@@ -45,8 +46,7 @@ gulp.task('desktop-three-columns', [ 'desktop-eight-columns' ], function () {
       upscale: false,
       interlace: true
     }))
-    .pipe(rename(function (path) { path.basename += '-desktop-three-columns'; }))
-    .pipe(gulp.dest(paths.destination));
+    .pipe(gulp.dest(paths.destinations.desktop3));
 });
 
 gulp.task('default', [ 'desktop-three-columns' ]);
