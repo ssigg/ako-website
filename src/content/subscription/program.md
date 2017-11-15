@@ -1,9 +1,10 @@
 ---
 title: Program
 ---
-**Hermann Suter**: Le Laudi di San Francesco d'Assisi
+**A. Dvořák**: «Die Mittagshexe», op. 108  
+**J. Suk**: «Ein Märchen», op. 16  
+**F. Mendelssohn**: Violinkonzert e-moll, op. 64
 
-**Leitung**: Anna Jelmorini  
-Zusammen mit dem Akademischen Chor Zürich und dem Kinderchor der Kantorei Luzern
+**Leitung**: Johannes Schlaefli  
 
-**Solisten**: Léonie Renaud (Sopran), Susannah Haberfeld (Alt), Raphaël Favre (Tenor), Robert Koller (Bass)
+**Solistin**: Lucija Krišelj
