@@ -27,6 +27,5 @@ collections:
   folder: "src/content/subscription" # The path to the folder where the documents are stored
   create: false # Allow users to create new documents in this collection
   fields: # The fields for each document, usually in front matter
-    - {label: "Text", name: "text", widget: "markdown"}
-    - {label: "Dates", name: "dates", widget: "markdown"}
-    - {label: "Program", name: "program", widget: "markdown"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Program", name: "body", widget: "markdown"}
