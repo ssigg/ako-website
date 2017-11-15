@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    {{ partial "head.html" (dict "title" "Anmeldung") }}
+    <body>
+        <div class="container">
+            {{ partial "header.html" }}
+            <div class="row content">
+                <div class="three columns">
+                    {{ partial "menu.html" . }}
+                </div>
+                <div class="seven columns">
+                    {{ range where .Data.Pages ".Title" "==" "Description" }}
+                        {{ .Render "description" }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="row content">
+                <div class="five columns offset-by-one" style="background:#ccc;border-radius:.5em;padding:.5em;">
+                    {{ range where .Data.Pages ".Title" "==" "Program" }}
+                        {{ .Render "program" }}
+                    {{ end }}
+                </div>
+                <div class="five columns" style="padding:.5em;">
+                    {{ range where .Data.Pages ".Title" "==" "Dates" }}
+                        {{ .Render "dates" }}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="row content">
+                <div class="four columns">
+                    <div class="form-group">
+                        <input type="email" ng-model="data.email" name="email" placeholder="Email" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.email.$touched && subscriptionForm.email.$error.required">Die Email-Adresse ist obligatorisch</div>
+                        <input type="text" ng-model="data.firstname" name="firstname" placeholder="Vorname" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.firstname.$touched && subscriptionForm.firstname.$error.required">Der Vorname ist obligatorisch</div>
+                        <input type="text" ng-model="data.lastname" name="lastname" placeholder="Nachname" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.lastname.$touched && subscriptionForm.lastname.$error.required">Der Nachname ist obligatorisch</div>
+                        <input type="text" ng-model="data.address" name="address" placeholder="Adresse" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.address.$touched && subscriptionForm.address.$error.required">Die Adresse ist obligatorisch</div>
+                        <input type="number" ng-model="data.zip" name="zip" placeholder="PLZ" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.zip.$touched && subscriptionForm.zip.$error.required">Die PLZ ist obligatorisch</div>
+                        <input type="text" ng-model="data.city" name="city" placeholder="Ort" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.city.$touched && subscriptionForm.city.$error.required">Der Ort ist obligatorisch</div>
+                        <input type="text" ng-model="data.phone" name="phone" placeholder="Telefonnummer" class="u-full-width" required>
+                        <div class="hint" ng-show="subscriptionForm.phone.$touched && subscriptionForm.phone.$error.required">Die Telefonnummer ist obligatorisch</div>
+                        <label for="student"><input type="checkbox" ng-model="data.student" id="student"> Student unter 26 Jahren</label>
+                    </div>
+                </div>
+                <div class="four columns">
+                    
+                </div>
+                <div class="four columns">
+                    
+                </div>
+            </div>
+            {{ partial "footer.html" }}
+        </div>
+    </body>
+</html>

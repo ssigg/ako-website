@@ -110,6 +110,15 @@ h3 {
     background:#190001;
 }
 
+dt {
+    font-weight:bold;
+}
+
+dd {
+    margin:0;
+    padding-left:1em;
+}
+
 .footer {
     color:#ddd;
     margin-bottom:2em;
